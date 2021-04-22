@@ -11,7 +11,9 @@ Anton Krill describes Interception as “Ability observe public method calls in 
 # Interceptors can provide functionality:
 
 Before a method
+
 After a method
+
 Around a method
 
 # Interception Integration In Magento
