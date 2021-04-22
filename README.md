@@ -33,17 +33,23 @@ path/to/your/module/etc/di.xml
 You must specify these elements:
 
 type name: A class or interface which the plugin observes.
+
 plugin name: An arbitrary plugin name that identifies a plugin. Also used to merge the configurations for the plugin.
+
 plugin type: The name of a plugin’s class or its virtual type. Use the following naming convention when you specify this element: \Vendor\Module\Plugin\<ClassName>.
 
 The following elements are optional:
 
 plugin sortOrder: Plugins that call the same method run them using this order.
+
 plugin disabled: To disable a plugin, set this element to true. The default value is false.
 
 # Reference
 
 https://nathanmcbride.io/magento2/Interception-In-Magento-2
+
 https://webkul.com/blog/magento2-use-plugins/
+
 https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html
+
 https://www.mageplaza.com/magento-2-module-development/magento-2-plugin-interceptor.html
