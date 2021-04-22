@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © AJ. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<type name="Magento\Checkout\Model\Cart">
+        <plugin name="aj_pluginexample_cart_first" type="AJ\PluginExample\Model\BeforeCartFirst" sortOrder="100" disabled="false" />
+    </type>
+    <type name="Magento\Checkout\Model\Cart">
+        <plugin name="aj_pluginexample_cart_second" type="AJ\PluginExample\Model\BeforeCartSecond" sortOrder="101" disabled="false" />
+    </type>
+    <type name="Magento\Catalog\Model\Product">
+        <plugin name="aj_pluginexample_product_second" type="AJ\PluginExample\Model\AfterProductSecond" sortOrder="100" disabled="false" />
+    </type>
+    <type name="Magento\Catalog\Model\Product">
+        <plugin name="aj_pluginexample_product_first" type="AJ\PluginExample\Model\AfterProductFirst" sortOrder="99" disabled="false" />
+    </type>
+    <type name="Magento\Checkout\Model\Cart">
+        <plugin name="aj_pluginexample_cart_around_first" type="AJ\PluginExample\Model\AroundCartFirst" sortOrder="200" disabled="false" />
+    </type>
+    <type name="Magento\Checkout\Model\Cart">
+        <plugin name="aj_pluginexample_cart_around_second" type="AJ\PluginExample\Model\AroundCartSecond" sortOrder="300" disabled="false" />
+    </type>
+    <type name="Magento\Checkout\Model\Cart">
+        <plugin name="aj_pluginexample_cart_after_first" type="AJ\PluginExample\Model\AfterCartFirst" sortOrder="10" disabled="false" />
+    </type>
+    <type name="Magento\Checkout\Model\Cart">
+        <plugin name="aj_pluginexample_cart_after_second" type="AJ\PluginExample\Model\AfterCartSecond" sortOrder="20" disabled="false" />
+    </type>
+</config>
