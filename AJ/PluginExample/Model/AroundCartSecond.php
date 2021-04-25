@@ -20,9 +20,12 @@ class AroundCartSecond
      * @return string
      * @codeCoverageIgnoreStart
      */
-    public function aroundAddProduct(\Magento\Checkout\Model\Cart $cart, \Closure $proceed, $productInfo,
-            $requestInfo = null)
-    {
+    public function aroundAddProduct(
+        \Magento\Checkout\Model\Cart $cart,
+        \Closure $proceed,
+        $productInfo,
+        $requestInfo = null
+    ) {
         $this->logger->info("Around Add Product: Sort Order 300:");
         $this->logger->debug("Around Add Product: Sort Order 300:");
         
